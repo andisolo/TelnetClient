@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/main_scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/main_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            android:textColor="#00FF00"
+            android:textSize="12sp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#303030"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/main_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="15"
+            android:background="#303030"
+            android:maxLines="1"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/main_quick_in"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="4"
+            android:background="#303030"
+            android:gravity="center"
+            android:text="快速输入"
+            android:textSize="16sp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/main_text02"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#303030"
+            android:src="@android:color/black"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/main_text01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#303030"
+            android:gravity="center"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/main_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/black"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@color/colorBlank"
+        android:keyTextColor="@android:color/white"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">手机OLT助手</string>
+    <string name="btn_for_command_activity">添加</string>
+    <string name="one_command">这里逐条输入命令</string>
+    <string name="send_btn">发送</string>
+    <string name="tips">这里逐条输入参数</string>
+    <string name="commands_name">脚本名称</string>
+    <string name="command_info">脚本内容</string>
+</resources>
