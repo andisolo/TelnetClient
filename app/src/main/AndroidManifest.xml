@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
+        android:name=".SampleApplication"
+        android:allowBackup="true"
         android:icon="@mipmap/pch0003"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/pch0003"
